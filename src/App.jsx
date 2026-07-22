@@ -542,6 +542,114 @@ function WhyNoor() {
   );
 }
 
+function SignatureFinder() {
+  const facets = [
+    "Для него / Для неё / Унисекс",
+    "Дневной / Вечерний",
+    "Мягкий / Насыщенный",
+    "Сладкий / Древесный / Удовый",
+  ];
+
+  return (
+    <section className="signature-finder" id="signature-finder">
+      <motion.div
+        className="signature-copy"
+        initial={{ opacity: 0, y: 34 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <p className="signature-kicker">Персональный подбор аромата</p>
+        <h2>
+          Найдите свой
+          <br />
+          <span>идеальный аромат</span>
+        </h2>
+        <p className="signature-text">
+          Ответьте на несколько вопросов, и мы подберём композицию,
+          которая подчеркнёт ваш стиль, настроение и характер.
+        </p>
+
+        <div className="signature-facets">
+          {facets.map((item, index) => (
+            <motion.div
+              className="signature-facet"
+              key={item}
+              initial={{ opacity: 0, x: -18 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.55, delay: 0.12 + index * 0.08 }}
+            >
+              <span>0{index + 1}</span>
+              <b>{item}</b>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.a
+          href="#quiz"
+          className="signature-button"
+          whileHover={{ y: -3 }}
+          whileTap={{ scale: 0.985 }}
+        >
+          Подобрать аромат
+          <ArrowRight size={18} />
+        </motion.a>
+      </motion.div>
+
+      <motion.div
+        className="signature-visual"
+        initial={{ opacity: 0, y: 32 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.28 }}
+        transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1], delay: 0.08 }}
+      >
+        <div className="signature-stage">
+          <div className="signature-stage-glow" aria-hidden="true" />
+          <motion.img
+            className="signature-scene"
+            src="images/signature-finder.jpg"
+            alt="Атмосфера арабской парфюмерии NOOR AL OUD"
+            loading="lazy"
+            initial={{ scale: 1.04 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
+          />
+          <motion.img
+            className="signature-bottle"
+            src="images/oud.png"
+            alt="Флакон аромата NOOR AL OUD"
+            animate={{ y: [0, -14, 0], rotate: [-2, 1.5, -2] }}
+            transition={{ duration: 8.5, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.span
+            className="signature-tag tag-top"
+            animate={{ y: [0, -8, 0] }}
+            transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+          >
+            Восточный характер
+          </motion.span>
+          <motion.span
+            className="signature-tag tag-middle"
+            animate={{ x: [0, 8, 0] }}
+            transition={{ duration: 6.3, repeat: Infinity, ease: "easeInOut" }}
+          >
+            Шлейф на весь вечер
+          </motion.span>
+          <motion.span
+            className="signature-tag tag-bottom"
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 5.9, repeat: Infinity, ease: "easeInOut" }}
+          >
+            Подбор за 30 секунд
+          </motion.span>
+        </div>
+      </motion.div>
+    </section>
+  );
+}
+
 function Featured({ onAdd }) {
   return (
     <section className="featured" id="featured">
@@ -1124,6 +1232,7 @@ export default function App() {
         <TrustStrip />
         <Manifest />
         <WhyNoor />
+        <SignatureFinder />
         <Featured onAdd={add} />
         <Benefits />
         <Moods />
