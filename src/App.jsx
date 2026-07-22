@@ -139,7 +139,7 @@ function LegacyHero() {
       <motion.img
         style={{ y }}
         className="hero-bg hero-image"
-        src="/images/hero-clouds.png"
+        src="images/hero-clouds.png"
         alt=""
         aria-hidden="true"
         initial={{ scale: 1.03 }}
@@ -156,7 +156,7 @@ function LegacyHero() {
         NOORÉ
       </motion.div>
       <motion.div style={{ rotate }} className="hero-bottle" hidden>
-        <img src="/images/oud.png" alt="Флакон NOORÉ" />
+        <img src="images/oud.png" alt="Флакон NOORÉ" />
       </motion.div>
       <motion.div
         className="hero-copy"
@@ -306,7 +306,7 @@ function Hero() {
     <section className="oud-hero" id="top">
       <motion.img
         className="oud-hero-bg"
-        src="/images/hero-noor-al-oud.png"
+        src="images/hero-noor-al-oud.png"
         alt="Флакон NOOR AL OUD в золотой пустынной сцене"
         style={{ y }}
         initial={{ scale: 1.02 }}
@@ -424,19 +424,19 @@ function Manifest() {
     {
       title: "Для него",
       description: "Сила. Харизма. Стиль.",
-      image: "/images/collection-him.png",
+      image: "images/collection-him.png",
       position: "center",
     },
     {
       title: "Для неё",
       description: "Лёгкость. Грация. Искушение.",
-      image: "/images/collection-her.png",
+      image: "images/collection-her.png",
       position: "center",
     },
     {
       title: "Унисекс",
       description: "Подлинные ноты для истинных ценителей.",
-      image: "/images/collection-unisex.png",
+      image: "images/collection-unisex.png",
       position: "center",
     },
   ];
@@ -505,7 +505,7 @@ function WhyNoor() {
     <section className="why-noor" id="why-noor">
       <motion.img
         className="why-noor-background"
-        src="/images/why-noor.png"
+        src="images/why-noor.png"
         alt="Флакон арабского парфюма NOOR AL OUD рядом с восточными фонарями"
         loading="lazy"
         initial={{ scale: 1.04 }}
@@ -547,7 +547,7 @@ function Featured({ onAdd }) {
     <section className="featured" id="featured">
       <motion.div className="feature-image" {...reveal}>
         <img
-          src="/images/oud.png"
+          src="images/oud.png"
           alt="Флакон Oud Al Sahra с шафраном, розой и древесиной"
         />
         <span className="note n1">Шафран</span>
@@ -663,7 +663,7 @@ function ProductCard({ p, onAdd, onFav, isFav }) {
       </button>
       {p.badge && <span className="badge">{p.badge}</span>}
       <div className={`product-photo ${p.tone}`}>
-        <img loading="lazy" src="/images/oud.png" alt={`Флакон ${p.name}`} />
+        <img loading="lazy" src="images/oud.png" alt={`Флакон ${p.name}`} />
       </div>
       <p className="category">
         {p.category} · {p.type}
@@ -959,7 +959,7 @@ function Finale() {
   return (
     <section className="finale">
       <div className="finale-bottle">
-        <img src="/images/oud.png" alt="Флакон коллекции NOORÉ" />
+        <img src="images/oud.png" alt="Флакон коллекции NOORÉ" />
       </div>
       <motion.div {...reveal}>
         <p className="eyebrow">Ваш аромат ждёт</p>
@@ -1053,7 +1053,7 @@ function Cart({ open, onClose, items, setItems }) {
                 <div className="cart-list">
                   {items.map((x) => (
                     <div className="cart-item" key={x.id}>
-                      <img src="/images/oud.png" alt="" />
+                      <img src="images/oud.png" alt="" />
                       <div>
                         <h3>{x.name}</h3>
                         <p>{x.notes}</p>
