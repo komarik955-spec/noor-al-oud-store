@@ -109,27 +109,31 @@ body{background:var(--cream);font-family:Manrope,Arial,sans-serif}.eyebrow{font-
   .collection-card-copy>a{min-width:132px;height:46px;margin-top:22px}
 
   .why-noor{min-height:auto}
-  .why-noor-background{height:360px;object-position:62% center}
-  .why-noor-content{padding:34px 14px 30px}
-  .why-noor-heading>p{font-size:15px}
-  .why-noor-heading h2{font-size:36px}
-  .why-noor-rule{margin:8px 0 20px}
-  .why-noor-rule span{left:86px}
-  .why-noor-grid{margin-top:230px;grid-template-columns:1fr}
-  .why-noor-item,.why-noor-item:nth-child(2n){min-height:auto;display:grid;grid-template-columns:52px 1fr;grid-template-rows:auto auto;column-gap:10px;text-align:left;padding:16px 4px 16px 0;border-right:0}
-  .why-noor-item>svg{grid-row:1/3;width:34px;height:34px;margin:2px 0 0 10px}
-  .why-noor-item h3{margin:0 0 4px;font-size:18px}
-  .why-noor-item p{font-size:11px;line-height:1.5}
+  .why-noor{border-radius:0;background:linear-gradient(180deg,#0a0705 0%,#120c08 100%)}
+  .why-noor-background{height:300px;object-position:64% center}
+  .why-noor-shade{background:linear-gradient(180deg,rgba(5,3,2,.38) 0%,rgba(5,3,2,.12) 18%,rgba(5,3,2,.88) 72%,#080503 100%)}
+  .why-noor-content{padding:24px 14px 26px}
+  .why-noor-heading>p{font-size:13px;letter-spacing:.08em;color:#c79c58}
+  .why-noor-heading h2{font-size:34px;line-height:.96}
+  .why-noor-rule{width:126px;margin:10px 0 16px}
+  .why-noor-rule span{left:24px}
+  .why-noor-grid{margin-top:206px;grid-template-columns:1fr;border-top:0;gap:10px}
+  .why-noor-item,.why-noor-item:nth-child(2n){min-height:auto;display:grid;grid-template-columns:42px 1fr;grid-template-rows:auto auto;column-gap:10px;text-align:left;padding:14px 12px;border:1px solid rgba(214,169,94,.14);border-radius:14px;background:rgba(17,10,6,.62);backdrop-filter:blur(10px)}
+  .why-noor-item>svg{grid-row:1/3;width:26px;height:26px;margin:4px 0 0 2px}
+  .why-noor-item h3{margin:0 0 4px;font-size:16px;line-height:1.18;min-height:auto}
+  .why-noor-item p{font-size:10px;line-height:1.5;color:rgba(245,236,224,.74)}
 
   .signature-finder{padding:52px 14px 56px;gap:18px}
-  .signature-copy h2{font-size:40px;line-height:.94}
-  .signature-text{font-size:13px;line-height:1.65}
-  .signature-facets{margin-top:22px}
+  .signature-copy{padding-top:6px}
+  .signature-kicker{font-size:13px;letter-spacing:.08em;margin-bottom:10px}
+  .signature-copy h2{font-size:34px;line-height:.96}
+  .signature-text{font-size:12px;line-height:1.6;max-width:none;margin-top:16px}
+  .signature-facets{margin-top:18px}
   .signature-facet{grid-template-columns:42px 1fr;padding:12px}
   .signature-facet span{width:28px;height:28px;font-size:9px}
   .signature-facet b{font-size:11px}
-  .signature-button{height:52px;margin-top:22px}
-  .signature-stage{min-height:390px;border-radius:18px}
+  .signature-button{height:50px;margin-top:18px}
+  .signature-stage{min-height:350px;border-radius:18px}
   .signature-bottle{width:64%;right:0;bottom:-3%}
   .signature-tag{font-size:8px;padding:9px 11px}
   .tag-middle,.tag-bottom{display:none}
