@@ -1,1 +1,0 @@
-export default {content:['./index.html','./src/**/*.{js,jsx}'],theme:{extend:{colors:{ivory:'#F3EBDD',paper:'#FAF7F1',coffee:'#241B17',muted:'#6E5B50',garnet:'#701F2B',gold:'#B49258',saffron:'#C68B3C',rose:'#B88983'},fontFamily:{display:['Cormorant Garamond','serif'],sans:['Manrope','sans-serif']}}},plugins:[]}
