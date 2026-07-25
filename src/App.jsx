@@ -258,7 +258,6 @@ function Header({ cartCount, favCount, onCart }) {
     ["Парфюм для неё", "collection"],
     ["Подарки", "service"],
     ["Новинки", "collection"],
-    ["Бренд", "story"],
     ["Блог", "manifest"],
   ];
 
@@ -615,13 +614,6 @@ function SignatureFinder() {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
-          />
-          <motion.img
-            className="signature-bottle"
-            src="images/oud.png"
-            alt="Флакон аромата NOOR AL OUD"
-            animate={{ y: [0, -14, 0], rotate: [-2, 1.5, -2] }}
-            transition={{ duration: 8.5, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.span
             className="signature-tag tag-top"
@@ -1233,16 +1225,11 @@ export default function App() {
         <Manifest />
         <WhyNoor />
         <SignatureFinder />
-        <Featured onAdd={add} />
-        <Benefits />
-        <Moods />
         <Collection onAdd={add} onFav={fav} favorites={favorites} />
-        <Story />
         <Quiz />
         <Reviews />
         <Service />
         <Newsletter />
-        <Finale />
       </main>
       <Footer />
       <Cart
